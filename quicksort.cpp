@@ -1,5 +1,4 @@
 #include<bits/stdc++.h>
-#include<ctime>
 using namespace std;
 int partition(int arr[],int p,int r)
 {
@@ -29,7 +28,7 @@ void quicksort(int arr[],int p,int r)
 }
 int main()
 {
-    clock_t start,stop;
+    
     int n;
     cout<<"Enter the size of the array : "<<endl;
     cin>>n;
@@ -38,16 +37,12 @@ int main()
     {
         cin>>a[i];
     }
-    start=clock();
     quicksort(a,0,n-1);
-    stop=clock();
     cout<<"The sorted array is : "<<endl;
     for(int i=0;i<n;i++)
     {
         cout<<a[i]<<" ";
     }
-    double time_taken=double(stop-start)/double(CLOCKS_PER_SEC);
-    cout<<"Time taken by a program is : "<<fixed <<time_taken<<setprecision(5);
-    cout<<"sec"<<endl;
+    
  return 0;
 }
