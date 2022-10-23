@@ -37,7 +37,6 @@ void printCodes(Node* root, string str="")
     printCodes(root->left, str+"0");
     printCodes(root->right, str+"1");
 }
-
 void printHCodes(char arr[], int freq[], int n)
 {
     priority_queue<Node*, vector<Node*> , compare> h;
