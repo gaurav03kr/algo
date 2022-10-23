@@ -65,17 +65,6 @@ void printHCodes(char arr[], int freq[], int n)
     printCodes(h.top());
 }
 
-/*struct compare
-{
-
-    bool operator()(Node* l , Node* r)
-    {
-        return l->freq > r->freq;
-    }
-};*/
-
-
-
 int main()
 {
     int n;
