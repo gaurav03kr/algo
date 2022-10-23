@@ -13,26 +13,11 @@ struct Activity
 };
 
 
-//struct Activity* a[25];
-
-
-/* void swap(int* a, int* b) {
-    int temp = *a;
-    *a = *b;
-    *b = temp;
-  }*/
-
-
 void input(struct Activity* a)
 {
-    
-    //printf("Enter the no of activities : \n");
-    //scanf("%d",&n);
-
-    for(i=0;i<n;i++)
+       for(i=0;i<n;i++)
     {
-       // printf("Enter the index of the activity : ");
-       // scanf("%d",&(a+i)->index);
+      
 
        (a+i)->index = (i+1);
         
@@ -44,14 +29,13 @@ void input(struct Activity* a)
 }
 void output(struct Activity* a)
 {
-    // struct Activity* a[25];
     for(i=0;i<n;i++)
     {
         for(j=i+1;j<n;j++)
         {
             if((a+i)->finish > (a+j)->finish)
             {
-                //swap(&a[i]->finish,&a[j]->finish);
+          
                 int t = (a+i)->finish;
                 (a+i)->finish=(a+j)->finish;
                 (a+j)->finish=t;
@@ -64,7 +48,7 @@ void output(struct Activity* a)
                 (a+i)->index=(a+j)->index;
                 (a+j)->start=t;
 
-                //swap(&a[i]->start , a[j]->start);
+                
             }
         }
     }
