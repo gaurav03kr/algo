@@ -1,5 +1,3 @@
-//FRACTIONAL KNAPSACK (GREEDY ALGORITHM)
-
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -38,8 +36,6 @@ void display(struct item* arr , int n)
     }
     printf("\n");
 }
-
-//sort the items as per descending order of value per unit weight (value / weight)
 void sort(struct item* arr , int n)
 {
     int i,j,t;
@@ -73,8 +69,6 @@ void sort(struct item* arr , int n)
 
 void fractionalKnapsack(struct item* arr , int n , int knapsack_capacity)
 {
-
-    //sorting the items in descending order of value per unit weight
     sort(arr,n);
 
     printf("\nAFTER SORTING : \n");
@@ -83,7 +77,6 @@ void fractionalKnapsack(struct item* arr , int n , int knapsack_capacity)
 
     int profit = 0;
 
-    //initially, the capacity of storage = size of knapsack
     int current_capacity = knapsack_capacity;
 
     printf("Items included : \n");
