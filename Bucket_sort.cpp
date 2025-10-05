@@ -5,8 +5,6 @@
 using namespace std; 
 
   
-// Function to sort arr[] of  
-// size n using bucket sort 
 
 void bucketSort(float arr[], int n) 
 { 
@@ -19,9 +17,6 @@ void bucketSort(float arr[], int n)
 
   
 
-    // 2) Put array elements  
-
-    // in different buckets 
 
     for (int i = 0; i < n; i++) { 
 
@@ -33,7 +28,6 @@ void bucketSort(float arr[], int n)
 
   
 
-    // 3) Sort individual buckets 
 
     for (int i = 0; i < n; i++) 
 
@@ -41,7 +35,6 @@ void bucketSort(float arr[], int n)
 
   
 
-    // 4) Concatenate all buckets into arr[] 
 
     int index = 0; 
 
