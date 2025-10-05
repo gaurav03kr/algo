@@ -4,7 +4,7 @@ int combine(int a, int b)
 {
     return min(a, b);
 }
-
+//add all function for better understanding and readibility
 void build(int n)
 {
     lg[1] = 0;
