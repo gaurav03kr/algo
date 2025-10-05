@@ -22,7 +22,7 @@ void floydWarshall(int graph[][V])
         for (i = 0; i < V; i++) {
 
             for (j = 0; j < V; j++) {
-
+//to find min distance
                 if (dist[i][k] + dist[k][j] < dist[i][j])
                     dist[i][j] = dist[i][k] + dist[k][j];
             }
