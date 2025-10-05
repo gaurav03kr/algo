@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+// add comments for better  readibility
 void heapify(int arr[], int N, int i)
 {
 
