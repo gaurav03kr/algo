@@ -1,4 +1,4 @@
-// Write down the code for the fractional knapsack problem, using the Greedy Approach.
+//addcomments for readibility
 
 #include <stdio.h>
 
